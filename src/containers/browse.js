@@ -8,7 +8,7 @@ import { SelectProfileContainer } from './profiles';
 import { FooterContainer } from './footer';
 
 export function BrowseContainer({ slides }) {
-    const [category, setCategory] = useState('series');
+    const [category, setCategory] = useState('films');
     const [profile, setProfile] = useState({});
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');

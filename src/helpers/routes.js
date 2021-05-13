@@ -9,8 +9,7 @@ export function IsUserRedirect({ user, loggedInPath, children, ...restProps }) {
                 if (!user) {
                     return children;
                 }
-                
-                if (user) {
+                else  {
                     return (
                         <Redirect
                             to={{
@@ -19,8 +18,7 @@ export function IsUserRedirect({ user, loggedInPath, children, ...restProps }) {
                         />
                     );
                 }
-            
-            return null;
+
         }}
         />
     )
@@ -35,7 +33,7 @@ export function ProtectedRoute({ user, children, ...restProps }) {
                     return children;
                 }
                 
-                if (!user) {
+                else {
                     return (
                         <Redirect
                             to={{
@@ -46,7 +44,7 @@ export function ProtectedRoute({ user, children, ...restProps }) {
                     );
                 }
                 
-                return null;
+
             }}
         />
     )
